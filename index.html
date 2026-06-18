@@ -1,301 +1,358 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>AI Station - Semua AI Tools Favoritmu Dalam Satu Aplikasi</title>
-  <meta
-    name="description"
-    content="AI Station adalah aplikasi launcher AI all-in-one untuk membuka ChatGPT, Claude, Gemini, Grok, Perplexity, dan tools AI lain dari satu dashboard elegan."
-  />
-  <meta name="theme-color" content="#080B14" />
+    <title>AI Station - Semua AI Tools Favoritmu Dalam Satu Aplikasi</title>
+    <meta
+      name="description"
+      content="AI Station adalah aplikasi launcher AI all-in-one untuk membuka ChatGPT, Claude, Gemini, Grok, Perplexity, dan tools AI lain dari satu dashboard elegan."
+    />
+    <meta name="theme-color" content="#080B14" />
 
-  <link rel="icon" href="Assets/icon/icon.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="icon" href="Assets/icon/icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <div class="site-bg">
-    <span class="orb orb-one"></span>
-    <span class="orb orb-two"></span>
-    <span class="grid-glow"></span>
-  </div>
-
-  <header class="navbar">
-    <a href="#" class="brand" aria-label="AI Station Home">
-      <img src="Assets/icon/logo.png" alt="AI Station Logo" class="brand-logo" />
-      <span>AI Station</span>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="nav-menu" id="navMenu">
-      <a href="#features">Fitur</a>
-      <a href="#showcase">Mockup</a>
-      <a href="#privacy">Privasi</a>
-      <a href="#faq">FAQ</a>
-      <a href="#download" class="nav-cta">Download</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">
-          <span></span>
-          AI Tools Hub untuk Android
-        </p>
-
-        <h1>
-          Semua AI Tools Favoritmu
-          <span>Dalam Satu Aplikasi</span>
-        </h1>
-
-        <p class="hero-subtitle">
-          Akses ChatGPT, Claude, Gemini, Grok, Perplexity, dan tools AI lain dari satu dashboard
-          elegan. Pilih tool, buka website resminya, lalu lanjutkan pekerjaanmu tanpa ribet.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#download" class="btn btn-primary">Download AI Station</a>
-          <a href="#features" class="btn btn-secondary">Lihat Fitur</a>
-        </div>
-
-        <div class="hero-points" aria-label="Keunggulan singkat">
-          <div>
-            <strong>Tanpa akun tambahan</strong>
-            <span>Login tetap di provider resmi</span>
-          </div>
-          <div>
-            <strong>WebView & Browser Aman</strong>
-            <span>Lebih fleksibel untuk berbagai tool</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual" id="showcase">
-        <div class="mockup-stack">
-          <img
-            src="Assets/mockup/Mockup%20iphone.png"
-            alt="Mockup AI Station pada iPhone"
-            class="phone-mockup phone-iphone"
-          />
-          <img
-            src="Assets/mockup/Mockup%20samsung.png"
-            alt="Mockup AI Station pada Samsung Galaxy"
-            class="phone-mockup phone-samsung"
-          />
-        </div>
-        <div class="visual-card">
-          <span class="status-dot"></span>
-          <p>Launcher independen untuk membuka website AI tools resmi.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="problem section-shell">
-      <div class="section-heading centered">
-        <p class="section-kicker">Masalah</p>
-        <h2>Terlalu banyak tools AI, terlalu banyak tab.</h2>
-        <p>
-          Setiap tool AI punya kekuatan masing-masing. Tapi saat semuanya tersebar di browser,
-          bookmark, dan shortcut terpisah, pekerjaan jadi kurang rapi. AI Station menyatukannya
-          dalam satu dashboard yang cepat dibuka.
-        </p>
-      </div>
-    </section>
-
-    <section id="features" class="features section-shell">
-      <div class="section-heading">
-        <p class="section-kicker">Fitur Utama</p>
-        <h2>Satu tempat untuk memulai pekerjaan berbasis AI.</h2>
-        <p>
-          Dibuat untuk pengguna yang sering berpindah antara chat, riset, penulisan, coding,
-          pencarian, dan eksplorasi ide.
-        </p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card">
-          <div class="feature-icon blue">⌁</div>
-          <h3>Dashboard AI Terpadu</h3>
-          <p>Lihat dan buka berbagai tools AI dari satu layar utama yang rapi, cepat, dan nyaman.</p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon purple">▣</div>
-          <h3>WebView & Browser Aman</h3>
-          <p>Buka tool di dalam aplikasi atau gunakan browser aman untuk provider yang lebih kompatibel.</p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon green">★</div>
-          <h3>Favorit & History</h3>
-          <p>Simpan tool yang sering dipakai dan akses kembali tool terakhir dibuka dengan cepat.</p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon cyan">✓</div>
-          <h3>Privasi Lebih Jelas</h3>
-          <p>AI Station tidak membaca isi chat, prompt, jawaban AI, atau password provider.</p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon orange">↻</div>
-          <h3>Update Dari Aplikasi</h3>
-          <p>Cek versi terbaru, baca release notes, unduh APK, dan pasang pembaruan langsung.</p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon pink">＋</div>
-          <h3>Tools Bisa Bertambah</h3>
-          <p>Daftar tools dapat diperbarui sehingga aplikasi bisa mengikuti perkembangan AI baru.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="device-showcase section-shell">
-      <div class="section-heading centered">
-        <p class="section-kicker">Tampilan Aplikasi</p>
-        <h2>Desain dark modern yang fokus pada akses cepat.</h2>
-        <p>
-          Mockup iPhone dan Samsung membantu pengunjung website melihat kesan aplikasi dengan
-          lebih jelas sebelum mengunduh.
-        </p>
-      </div>
-
-      <div class="showcase-grid">
-        <div class="showcase-card">
-          <img src="Assets/mockup/Mockup%20iphone.png" alt="AI Station iPhone mockup" />
-          <h3>iPhone-style Preview</h3>
-          <p>Tampilan bersih untuk kebutuhan promosi dan hero website.</p>
-        </div>
-
-        <div class="showcase-card">
-          <img src="Assets/mockup/Mockup%20samsung.png" alt="AI Station Samsung mockup" />
-          <h3>Android Preview</h3>
-          <p>Menunjukkan pengalaman AI Station sebagai aplikasi Android.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="privacy" class="privacy section-shell">
-      <div class="privacy-box">
-        <div>
-          <p class="section-kicker">Privasi</p>
-          <h2>Kamu tetap login di website resmi provider.</h2>
-        </div>
-
-        <p>
-          AI Station tidak meminta akun khusus untuk menggunakan aplikasi. Saat sebuah tool
-          membutuhkan login, proses login berlangsung langsung di website resmi tool tersebut.
-          Aplikasi tidak menyimpan password provider dan tidak membaca isi percakapan AI.
-        </p>
-
-        <div class="privacy-list">
-          <span>✓ Tidak membaca prompt</span>
-          <span>✓ Tidak menyimpan password AI provider</span>
-          <span>✓ Tidak mengklaim sebagai AI model baru</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="update section-shell">
-      <div class="update-card">
-        <div class="update-content">
-          <p class="section-kicker">Update</p>
-          <h2>Selalu siap dengan versi terbaru.</h2>
-          <p>
-            AI Station dapat memeriksa pembaruan dari aplikasi. Jika versi baru tersedia,
-            pengguna dapat membaca catatan perubahan, mengunduh APK, dan melanjutkan instalasi.
-          </p>
-        </div>
-
-        <div class="release-panel">
-          <div class="release-row">
-            <span>Latest Version</span>
-            <strong>v1.0.0</strong>
-          </div>
-          <div class="release-row">
-            <span>Status</span>
-            <strong>Ready for Android</strong>
-          </div>
-          <div class="progress-line"><span></span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="faq section-shell">
-      <div class="section-heading centered">
-        <p class="section-kicker">FAQ</p>
-        <h2>Pertanyaan yang sering muncul.</h2>
-      </div>
-
-      <div class="faq-list">
-        <details open>
-          <summary>Apakah AI Station adalah chatbot AI sendiri?</summary>
-          <p>Tidak. AI Station adalah launcher untuk membuka website resmi berbagai AI tools.</p>
-        </details>
-
-        <details>
-          <summary>Apakah saya perlu membuat akun AI Station?</summary>
-          <p>Tidak. Aplikasi pengguna tidak membutuhkan login khusus ke AI Station.</p>
-        </details>
-
-        <details>
-          <summary>Apakah AI Station membaca isi chat saya?</summary>
-          <p>Tidak. Aplikasi tidak membaca prompt, jawaban, atau isi percakapan di dalam WebView.</p>
-        </details>
-
-        <details>
-          <summary>Kenapa beberapa tool dibuka di Browser Aman?</summary>
-          <p>
-            Beberapa provider membatasi login atau fitur tertentu di embedded WebView. Browser Aman
-            dipakai agar login dan akses lebih kompatibel.
-          </p>
-        </details>
-
-        <details>
-          <summary>Apakah AI Station berafiliasi dengan provider AI?</summary>
-          <p>
-            Tidak, kecuali dinyatakan resmi. AI Station adalah launcher independen untuk membuka
-            layanan pihak ketiga.
-          </p>
-        </details>
-      </div>
-    </section>
-
-    <section id="download" class="download section-shell">
-      <div class="download-box">
-        <img src="Assets/icon/logo.png" alt="AI Station Logo" />
-        <h2>Mulai gunakan AI Station.</h2>
-        <p>
-          Satu aplikasi untuk membuka banyak tools AI favorit dari dashboard yang rapi,
-          elegan, dan praktis.
-        </p>
-        <a href="#" class="btn btn-primary">Download APK</a>
-        <small>Link download APK akan ditambahkan setelah release tersedia.</small>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-brand">
-      <img src="Assets/icon/logo.png" alt="AI Station Logo" />
-      <span>AI Station</span>
+  <body>
+    <div class="site-bg">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="grid-glow"></span>
     </div>
 
-    <p>
-      AI Station adalah launcher independen untuk membuka website AI tools. Seluruh merek dan
-      layanan pihak ketiga adalah milik pemilik masing-masing.
-    </p>
-  </footer>
+    <header class="navbar">
+      <a href="#" class="brand" aria-label="AI Station Home">
+        <img
+          src="Assets/icon/logo.png"
+          alt="AI Station Logo"
+          class="brand-logo"
+        />
+        <span>AI Station</span>
+      </a>
 
-  <script src="script.js"></script>
-</body>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#features">Fitur</a>
+        <a href="#showcase">Mockup</a>
+        <a href="#privacy">Privasi</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download" class="nav-cta">Download</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span></span>
+            AI Tools Hub untuk Android
+          </p>
+
+          <h1>
+            Semua AI Tools Favoritmu
+            <span>Dalam Satu Aplikasi</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Akses ChatGPT, Claude, Gemini, Grok, Perplexity, dan tools AI lain
+            dari satu dashboard elegan. Pilih tool, buka website resminya, lalu
+            lanjutkan pekerjaanmu tanpa ribet.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary">Download AI Station</a>
+            <a href="#features" class="btn btn-secondary">Lihat Fitur</a>
+          </div>
+
+          <div class="hero-points" aria-label="Keunggulan singkat">
+            <div>
+              <strong>Tanpa akun tambahan</strong>
+              <span>Login tetap di provider resmi</span>
+            </div>
+            <div>
+              <strong>WebView & Browser Aman</strong>
+              <span>Lebih fleksibel untuk berbagai tool</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" id="showcase">
+          <div class="mockup-stack">
+            <img
+              src="Assets/mockup/Mockup%20iphone.png"
+              alt="Mockup AI Station pada iPhone"
+              class="phone-mockup phone-iphone"
+            />
+            <img
+              src="Assets/mockup/Mockup%20samsung.png"
+              alt="Mockup AI Station pada Samsung Galaxy"
+              class="phone-mockup phone-samsung"
+            />
+          </div>
+          <div class="visual-card">
+            <span class="status-dot"></span>
+            <p>Launcher independen untuk membuka website AI tools resmi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem section-shell">
+        <div class="section-heading centered">
+          <p class="section-kicker">Masalah</p>
+          <h2>Terlalu banyak tools AI, terlalu banyak tab.</h2>
+          <p>
+            Setiap tool AI punya kekuatan masing-masing. Tapi saat semuanya
+            tersebar di browser, bookmark, dan shortcut terpisah, pekerjaan jadi
+            kurang rapi. AI Station menyatukannya dalam satu dashboard yang
+            cepat dibuka.
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="features section-shell">
+        <div class="section-heading">
+          <p class="section-kicker">Fitur Utama</p>
+          <h2>Satu tempat untuk memulai pekerjaan berbasis AI.</h2>
+          <p>
+            Dibuat untuk pengguna yang sering berpindah antara chat, riset,
+            penulisan, coding, pencarian, dan eksplorasi ide.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon blue">⌁</div>
+            <h3>Dashboard AI Terpadu</h3>
+            <p>
+              Lihat dan buka berbagai tools AI dari satu layar utama yang rapi,
+              cepat, dan nyaman.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon purple">▣</div>
+            <h3>WebView & Browser Aman</h3>
+            <p>
+              Buka tool di dalam aplikasi atau gunakan browser aman untuk
+              provider yang lebih kompatibel.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon green">★</div>
+            <h3>Favorit & History</h3>
+            <p>
+              Simpan tool yang sering dipakai dan akses kembali tool terakhir
+              dibuka dengan cepat.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon cyan">✓</div>
+            <h3>Privasi Lebih Jelas</h3>
+            <p>
+              AI Station tidak membaca isi chat, prompt, jawaban AI, atau
+              password provider.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon orange">↻</div>
+            <h3>Update Dari Aplikasi</h3>
+            <p>
+              Cek versi terbaru, baca release notes, unduh APK, dan pasang
+              pembaruan langsung.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon pink">＋</div>
+            <h3>Tools Bisa Bertambah</h3>
+            <p>
+              Daftar tools dapat diperbarui sehingga aplikasi bisa mengikuti
+              perkembangan AI baru.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="device-showcase section-shell">
+        <div class="section-heading centered">
+          <p class="section-kicker">Tampilan Aplikasi</p>
+          <h2>Desain dark modern yang fokus pada akses cepat.</h2>
+          <p>
+            Mockup iPhone dan Samsung membantu pengunjung website melihat kesan
+            aplikasi dengan lebih jelas sebelum mengunduh.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <div class="showcase-card">
+            <img
+              src="Assets/mockup/Mockup%20iphone.png"
+              alt="AI Station iPhone mockup"
+            />
+            <h3>iPhone-style Preview</h3>
+            <p>Tampilan bersih untuk kebutuhan promosi dan hero website.</p>
+          </div>
+
+          <div class="showcase-card">
+            <img
+              src="Assets/mockup/Mockup%20samsung.png"
+              alt="AI Station Samsung mockup"
+            />
+            <h3>Android Preview</h3>
+            <p>Menunjukkan pengalaman AI Station sebagai aplikasi Android.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacy" class="privacy section-shell">
+        <div class="privacy-box">
+          <div>
+            <p class="section-kicker">Privasi</p>
+            <h2>Kamu tetap login di website resmi provider.</h2>
+          </div>
+
+          <p>
+            AI Station tidak meminta akun khusus untuk menggunakan aplikasi.
+            Saat sebuah tool membutuhkan login, proses login berlangsung
+            langsung di website resmi tool tersebut. Aplikasi tidak menyimpan
+            password provider dan tidak membaca isi percakapan AI.
+          </p>
+
+          <div class="privacy-list">
+            <span>✓ Tidak membaca prompt</span>
+            <span>✓ Tidak menyimpan password AI provider</span>
+            <span>✓ Tidak mengklaim sebagai AI model baru</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="update section-shell">
+        <div class="update-card">
+          <div class="update-content">
+            <p class="section-kicker">Update</p>
+            <h2>Selalu siap dengan versi terbaru.</h2>
+            <p>
+              AI Station dapat memeriksa pembaruan dari aplikasi. Jika versi
+              baru tersedia, pengguna dapat membaca catatan perubahan, mengunduh
+              APK, dan melanjutkan instalasi.
+            </p>
+          </div>
+
+          <div class="release-panel">
+            <div class="release-row">
+              <span>Latest Version</span>
+              <strong>v1.0.0</strong>
+            </div>
+            <div class="release-row">
+              <span>Status</span>
+              <strong>Ready for Android</strong>
+            </div>
+            <div class="progress-line"><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section-shell">
+        <div class="section-heading centered">
+          <p class="section-kicker">FAQ</p>
+          <h2>Pertanyaan yang sering muncul.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>Apakah AI Station adalah chatbot AI sendiri?</summary>
+            <p>
+              Tidak. AI Station adalah launcher untuk membuka website resmi
+              berbagai AI tools.
+            </p>
+          </details>
+
+          <details>
+            <summary>Apakah saya perlu membuat akun AI Station?</summary>
+            <p>
+              Tidak. Aplikasi pengguna tidak membutuhkan login khusus ke AI
+              Station.
+            </p>
+          </details>
+
+          <details>
+            <summary>Apakah AI Station membaca isi chat saya?</summary>
+            <p>
+              Tidak. Aplikasi tidak membaca prompt, jawaban, atau isi percakapan
+              di dalam WebView.
+            </p>
+          </details>
+
+          <details>
+            <summary>Kenapa beberapa tool dibuka di Browser Aman?</summary>
+            <p>
+              Beberapa provider membatasi login atau fitur tertentu di embedded
+              WebView. Browser Aman dipakai agar login dan akses lebih
+              kompatibel.
+            </p>
+          </details>
+
+          <details>
+            <summary>Apakah AI Station berafiliasi dengan provider AI?</summary>
+            <p>
+              Tidak, kecuali dinyatakan resmi. AI Station adalah launcher
+              independen untuk membuka layanan pihak ketiga.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="download" class="download section-shell">
+        <div class="download-box">
+          <img src="Assets/icon/logo.png" alt="AI Station Logo" />
+          <h2>Mulai gunakan AI Station.</h2>
+          <p>
+            Satu aplikasi untuk membuka banyak tools AI favorit dari dashboard
+            yang rapi, elegan, dan praktis.
+          </p>
+          <a
+            href="https://novqecvtwpmkebxsgxzs.supabase.co/storage/v1/object/public/app-releases/android/6/1781788167733-ai-station-2.0.3.apk"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+          >
+            Download APK
+          </a>
+          <small
+            >Link download APK akan ditambahkan setelah release tersedia.</small
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <img src="Assets/icon/logo.png" alt="AI Station Logo" />
+        <span>AI Station</span>
+      </div>
+
+      <p>
+        AI Station adalah launcher independen untuk membuka website AI tools.
+        Seluruh merek dan layanan pihak ketiga adalah milik pemilik
+        masing-masing.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
