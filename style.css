@@ -502,13 +502,22 @@ img {
 
 .privacy-box,
 .update-card,
-.download-box {
+.download-box,
+.finder-card {
   border-radius: 34px;
   border: 1px solid var(--border);
   background:
     linear-gradient(135deg, rgba(124, 77, 255, 0.13), rgba(40, 199, 255, 0.07)),
     rgba(15, 23, 42, 0.62);
   box-shadow: var(--shadow);
+}
+
+.finder-card {
+  padding: 44px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
 }
 
 .privacy-box {
@@ -711,7 +720,8 @@ details p {
   }
 
   .privacy-box,
-  .update-card {
+  .update-card,
+  .finder-card {
     grid-template-columns: 1fr;
   }
 
