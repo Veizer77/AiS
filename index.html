@@ -44,8 +44,9 @@
       </button>
 
       <nav class="nav-menu" id="navMenu">
+        <a href="#dashboard">Dashboard</a>
         <a href="#features">Fitur</a>
-        <a href="#showcase">Mockup</a>
+        <a href="#desain">Desain</a>
         <a href="#privacy">Privasi</a>
         <a href="#faq">FAQ</a>
         <a href="#download" class="nav-cta">Download</a>
@@ -53,8 +54,8 @@
     </header>
 
     <main>
-      <section class="hero section-shell">
-        <div class="hero-copy">
+      <section id="dashboard" class="hero section-shell">
+        <div class="hero-copy reveal">
           <p class="eyebrow">
             <span></span>
             AI Tools Hub untuk Android
@@ -88,17 +89,17 @@
           </div>
         </div>
 
-        <div class="hero-visual" id="showcase">
-          <div class="mockup-stack">
+        <div class="hero-visual reveal" id="showcase">
+          <div class="screenshot-stack">
             <img
-              src="Assets/mockup/Mockup%20iphone.png"
-              alt="Mockup AI Station pada iPhone"
-              class="phone-mockup phone-iphone"
+              src="Assets\mockup\iphone17_mockup_flat.png"
+              alt="Screenshot AI Station Dashboard"
+              class="screenshot-main"
             />
             <img
-              src="Assets/mockup/Mockup%20samsung.png"
-              alt="Mockup AI Station pada Samsung Galaxy"
-              class="phone-mockup phone-samsung"
+              src="Assets\mockup\iphone17_mockup_flat_aifinder.png"
+              alt="Screenshot AI Finder"
+              class="screenshot-secondary"
             />
           </div>
           <div class="visual-card">
@@ -109,7 +110,7 @@
       </section>
 
       <section class="problem section-shell">
-        <div class="section-heading centered">
+        <div class="section-heading centered reveal">
           <p class="section-kicker">Masalah</p>
           <h2>Terlalu banyak tools AI, terlalu banyak tab.</h2>
           <p>
@@ -122,7 +123,7 @@
       </section>
 
       <section id="aifinder" class="aifinder section-shell" style="padding-top: 10px; padding-bottom: 20px;">
-        <div class="finder-card">
+        <div class="finder-card reveal">
           <div class="finder-content">
             <p class="section-kicker">Fitur Unggulan</p>
             <h2 style="margin-top: 10px; font-size: clamp(30px, 4.6vw, 48px); line-height: 1.1; letter-spacing: -0.05em;">AI Finder: Temukan Pendamping AI yang Tepat.</h2>
@@ -153,7 +154,7 @@
       </section>
 
       <section id="features" class="features section-shell" style="padding-top: 40px;">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="section-kicker">Fitur Utama</p>
           <h2>Satu tempat untuk memulai pekerjaan berbasis AI.</h2>
           <p>
@@ -163,7 +164,7 @@
         </div>
 
         <div class="feature-grid">
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon blue">⌁</div>
             <h3>Dashboard AI Terpadu</h3>
             <p>
@@ -172,7 +173,7 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon purple">▣</div>
             <h3>WebView & Browser Aman</h3>
             <p>
@@ -181,7 +182,7 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon green">★</div>
             <h3>Favorit & History</h3>
             <p>
@@ -190,7 +191,7 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon cyan">✓</div>
             <h3>Privasi Lebih Jelas</h3>
             <p>
@@ -199,7 +200,7 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon orange">↻</div>
             <h3>Update Dari Aplikasi</h3>
             <p>
@@ -208,7 +209,7 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon pink">✧</div>
             <h3>Rekomendasi AI Finder</h3>
             <p>
@@ -218,39 +219,40 @@
         </div>
       </section>
 
-      <section class="device-showcase section-shell">
-        <div class="section-heading centered">
+      <section id="desain" class="device-showcase section-shell">
+        <div class="section-heading centered reveal">
           <p class="section-kicker">Tampilan Aplikasi</p>
           <h2>Desain dark modern yang fokus pada akses cepat.</h2>
           <p>
-            Mockup iPhone dan Samsung membantu pengunjung website melihat kesan
-            aplikasi dengan lebih jelas sebelum mengunduh.
+            Antarmuka AI Station dirancang khusus agar rapi, intuitif, dan tidak membingungkan pengguna saat berganti-ganti AI.
           </p>
         </div>
 
         <div class="showcase-grid">
-          <div class="showcase-card">
+          <div class="showcase-card reveal">
             <img
-              src="Assets/mockup/Mockup%20iphone.png"
-              alt="AI Station iPhone mockup"
+              src="Assets/Screenshoot/Screenshot_dashboard.png"
+              alt="AI Station Dashboard Screenshot"
+              class="showcase-screenshot"
             />
-            <h3>iPhone-style Preview</h3>
-            <p>Tampilan bersih untuk kebutuhan promosi dan hero website.</p>
+            <h3>Dashboard Utama</h3>
+            <p>Pusat akses cepat ke seluruh AI tools favoritmu dalam satu layar.</p>
           </div>
 
-          <div class="showcase-card">
+          <div class="showcase-card reveal">
             <img
-              src="Assets/mockup/Mockup%20samsung.png"
-              alt="AI Station Samsung mockup"
+              src="Assets/Screenshoot/Screenshot_aifinder.png"
+              alt="AI Station AI Finder Screenshot"
+              class="showcase-screenshot"
             />
-            <h3>Android Preview</h3>
-            <p>Menunjukkan pengalaman AI Station sebagai aplikasi Android.</p>
+            <h3>AI Finder Terintegrasi</h3>
+            <p>Dapatkan rekomendasi tool AI terbaik hanya dengan menceritakan masalahmu.</p>
           </div>
         </div>
       </section>
 
       <section id="privacy" class="privacy section-shell">
-        <div class="privacy-box">
+        <div class="privacy-box reveal">
           <div>
             <p class="section-kicker">Privasi</p>
             <h2>Kamu tetap login di website resmi provider.</h2>
@@ -272,7 +274,7 @@
       </section>
 
       <section class="update section-shell">
-        <div class="update-card">
+        <div class="update-card reveal">
           <div class="update-content">
             <p class="section-kicker">Update</p>
             <h2>Selalu siap dengan versi terbaru.</h2>
@@ -286,7 +288,7 @@
           <div class="release-panel">
             <div class="release-row">
               <span>Latest Version</span>
-              <strong>v2.1.6+12</strong>
+              <strong>v2.2.7+13</strong>
             </div>
             <div class="release-row">
               <span>Status</span>
@@ -298,12 +300,12 @@
       </section>
 
       <section id="faq" class="faq section-shell">
-        <div class="section-heading centered">
+        <div class="section-heading centered reveal">
           <p class="section-kicker">FAQ</p>
           <h2>Pertanyaan yang sering muncul.</h2>
         </div>
 
-        <div class="faq-list">
+        <div class="faq-list reveal">
           <details open>
             <summary>Apakah AI Station adalah chatbot AI sendiri?</summary>
             <p>
@@ -348,7 +350,7 @@
       </section>
 
       <section id="download" class="download section-shell">
-        <div class="download-box">
+        <div class="download-box reveal">
           <img src="Assets/icon/logo.png" alt="AI Station Logo" />
           <h2>Mulai gunakan AI Station.</h2>
           <p>
@@ -356,12 +358,12 @@
             yang rapi, elegan, dan praktis.
           </p>
           <a
-            href="https://novqecvtwpmkebxsgxzs.supabase.co/storage/v1/object/public/app-releases/android/12/1783124659976-ai-station-2.1.6.apk"
+            href="https://novqecvtwpmkebxsgxzs.supabase.co/storage/v1/object/public/app-releases/android/13/1784007962316-ai-station-2.2.7.apk"
             class="btn btn-primary"
             target="_blank"
             rel="noopener"
           >
-            Download APK (v2.1.6)
+            Download APK (v2.2.7)
           </a>
         </div>
       </section>
